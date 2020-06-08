@@ -39,15 +39,5 @@ public class InfinispanGreetingResource {
     	LOGGER.info("The fetched key is : "+value);
     	
     	return value!=null?value:"No value for the key "+ key;
-    }
-    
-    @POST
-    @Path("/key/{key}/value/{value}")
-    public String putvalue(@PathParam String key, @PathParam String value) {
-    	LOGGER.info("Inside putvalue");
-    	LOGGER.info("The entered Key is "+key+" and value is "+value);
-        cache.put(key,value);
-        return "Cache key "+key+ " value "+value;
-    }
-    
+    }   
 }
