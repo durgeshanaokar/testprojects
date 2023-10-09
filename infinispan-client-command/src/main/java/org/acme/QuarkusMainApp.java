@@ -8,6 +8,7 @@ import org.acme.infinispan.client.InfinispanGreetingResource;
 import io.quarkus.runtime.Quarkus;
 import io.quarkus.runtime.QuarkusApplication;
 import io.quarkus.runtime.annotations.QuarkusMain;
+//This is test comment
 
 @QuarkusMain
 public class QuarkusMainApp implements QuarkusApplication{
